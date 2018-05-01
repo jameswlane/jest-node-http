@@ -38,7 +38,7 @@ export class ClientRequest {
   public socket: any;
   public write: any;
 
-  constructor(options: any, cb: any) {
+  constructor(options?: any, cb?: any) {
     this.abort = jest.fn();
     this.aborted = jest.fn();
     this.connection = jest.fn();
