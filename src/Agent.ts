@@ -8,7 +8,9 @@ export interface IAgentOptions {
 }
 
 export interface IVoidMockInstance {
-  mockReset(): void;
+  (): void;
+
+  mockReset: () => void;
 }
 
 /*
