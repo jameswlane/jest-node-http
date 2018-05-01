@@ -1,4 +1,6 @@
 # Jest Node Express
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/jameswlane/jest-node-http.svg)](https://greenkeeper.io/)
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 [![CircleCI](https://circleci.com/gh/jameswlane/jest-node-http.svg?style=svg)](https://circleci.com/gh/jameswlane/jest-node-http)
 [![Maintainability](https://api.codeclimate.com/v1/badges/b305dfc17acf29a3010a/maintainability)](https://codeclimate.com/github/jameswlane/jest-node-http/maintainability)
