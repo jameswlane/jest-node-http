@@ -27,7 +27,7 @@ export class Server {
   public timeout: any;
   public keepAliveTimeout: any;
 
-  constructor(opts: any, requestListener: any) {
+  constructor(opts?: any, requestListener?: any) {
     this.close = jest.fn();
     this.listen = jest.fn();
     this.listening = jest.fn();
