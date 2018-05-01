@@ -1,41 +1,52 @@
-import * as express from '../../src';
-import { Application } from '../../src/application';
-import { Request as RealRequest } from '../../src/request';
-import { Response as RealResponse } from '../../src/response';
-import { Router as RealRouter } from '../../src/router';
-import { Express as RealExpress } from '../../src/express';
-import { next as RealNext } from '../../src/next';
+import { Agent as RealAgent } from '../../src/Agent';
+import { ClientRequest as RealClientRequest } from '../../src/ClientRequest';
+import { IncomingMessage as RealIncomingMessage } from '../../src/IncomingMessage';
+import * as http from '../../src/index';
+import { METHODS as RealMethods } from '../../src/Methods';
+import { Server as RealServer } from '../../src/Server';
+import { ServerResponse as RealServerResponse } from '../../src/ServerResponse';
+import { STATUS_CODES as RealStatusCodes } from '../../src/StatusCodes';
 
-let application: Application;
-
-describe('Exporter', () => {
-  test('Default export is a instance of express', () => {
-    expect(express()).toBeInstanceOf(RealExpress);
+describe('Index', () => {
+  test('Agent is a instance of Agent class', () => {
+    expect(new http.Agent()).toBeInstanceOf(RealAgent);
   });
 
-  test('Router is a instance of Router class', () => {
-    expect(express.Router()).toBeInstanceOf(RealRouter);
+  test('ClientRequest is a instance of ClientRequest class', () => {
+    expect(new http.ClientRequest()).toBeInstanceOf(RealClientRequest);
   });
 
-  test('Response is a instance of Response class', () => {
-    expect(express.Response).toEqual(RealResponse);
+  test('IncomingMessage is a instance of IncomingMessage class', () => {
+    expect(new http.IncomingMessage()).toBeInstanceOf(RealIncomingMessage);
   });
 
-  test('Express is a instance of Express class', () => {
-    expect(express.Express).toEqual(RealExpress);
+  test('METHODS is a instance of METHODS class', () => {
+    expect(http.METHODS).toEqual(RealMethods);
   });
 
-  test('Request is a instance of Request class', () => {
-    expect(express.Request).toEqual(RealRequest);
+  test('Server is a instance of Server class', () => {
+    expect(new http.Server()).toBeInstanceOf(RealServer);
   });
 
-  test('Next is a instance of Next function', () => {
-    expect(express.Next).toEqual(RealNext);
+  test('ServerResponse is a instance of ServerResponse class', () => {
+    expect(new http.ServerResponse()).toBeInstanceOf(RealServerResponse);
   });
 
-  test('resetMocked is a instance of Application resetMocked function', () => {
-    application = new Application();
+  test('STATUS_CODES is a instance of STATUS_CODES function', () => {
+    expect(http.STATUS_CODES).toEqual(RealStatusCodes);
+  });
 
-    expect(express.resetMocked).toEqual(application.resetMocked);
+  test('createServer is a instance of createServer class', () => {
+    expect(http.createServer()).toBeInstanceOf(RealServer);
+  });
+
+  test('request is a instance of request class', () => {
+    expect(http.request()).toBeInstanceOf(RealClientRequest);
+  });
+
+  test('get is a instance of get class', () => {
+    // TODO: Test that req.end() has been called
+
+    expect(http.get()).toBeInstanceOf(RealClientRequest);
   });
 });
