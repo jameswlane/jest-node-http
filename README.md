@@ -1,4 +1,5 @@
 # Jest Node Express
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 [![CircleCI](https://circleci.com/gh/jameswlane/jest-node-http.svg?style=svg)](https://circleci.com/gh/jameswlane/jest-node-http)
 [![Maintainability](https://api.codeclimate.com/v1/badges/b305dfc17acf29a3010a/maintainability)](https://codeclimate.com/github/jameswlane/jest-node-http/maintainability)
 [![codecov](https://codecov.io/gh/jameswlane/jest-node-http/branch/master/graph/badge.svg)](https://codecov.io/gh/jameswlane/jest-node-http)
@@ -16,3 +17,15 @@
 ## Contributing
 
 ## License
+
+## Contributors
+
+Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+| [<img src="https://avatars2.githubusercontent.com/u/794161?v=4" width="100px;"/><br /><sub><b>James W. Lane III</b></sub>](http://fueledbydreams.com)<br />[💻](https://github.com/jameswlane/jest-node-http/commits?author=jameswlane "Code") [🚇](#infra-jameswlane "Infrastructure (Hosting, Build-Tools, etc)") [⚠️](https://github.com/jameswlane/jest-node-http/commits?author=jameswlane "Tests") [🔧](#tool-jameswlane "Tools") |
+| :---: |
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
