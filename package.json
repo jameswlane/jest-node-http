@@ -58,7 +58,7 @@
     "@types/chance": "1.0.1",
     "@types/faker": "4.1.4",
     "@types/jest": "23.3.10",
-    "@types/node": "10.0.3",
+    "@types/node": "10.12.18",
     "all-contributors-cli": "5.4.1",
     "chance": "1.0.18",
     "codecov": "3.1.0",
