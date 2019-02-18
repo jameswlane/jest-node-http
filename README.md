@@ -17,8 +17,10 @@
 </a>
 
 ## Contributing
+[Contributing](CONTRIBUTING.md)
 
 ## License
+[MIT](LICENSE)
 
 ## Contributors
 
