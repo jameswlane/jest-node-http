@@ -62,7 +62,7 @@
     "@types/node": "12.7.1",
     "all-contributors-cli": "6.7.0",
     "chance": "1.0.18",
-    "codecov": "3.5.0",
+    "codecov": "3.7.0",
     "commitizen": "4.0.3",
     "cz-conventional-changelog": "3.0.2",
     "faker": "4.1.0",
